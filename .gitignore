@@ -23,3 +23,6 @@ electron-builder.env
 
 # OpenCode
 .opencode/
+
+# Generated screenshots
+docs/screenshots/

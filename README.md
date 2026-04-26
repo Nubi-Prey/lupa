@@ -2,6 +2,13 @@
 
 Gerenciador de Ordens de Serviço desktop para oficinas de joalheria, com arquitetura local-first, busca fuzzy instantânea e impressão em duas vias.
 
+<p align="center"><img src="docs/img/dashboard.png" width="600" /></p>
+
+<p align="center">
+  <img src="docs/img/workshop.png" width="295" />
+  <img src="docs/img/service-orders.png" width="295" />
+</p>
+
 ## Visão Geral
 
 - Interface reativa com busca fuzzy (Fuse.js) para autocompletar clientes e serviços
