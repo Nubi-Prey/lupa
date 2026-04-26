@@ -13,7 +13,7 @@ Gerenciador de Ordens de Serviço desktop para oficinas de joalheria, com arquit
 
 - Interface reativa com busca fuzzy (Fuse.js) para autocompletar clientes e serviços
 - Arquitetura local-first: funciona offline com cache local, sincroniza com MongoDB Atlas quando online
-- Impressão imediata de OS em duas vias (A4) via CSS `@media print`
+- Impressão personalizada de OS em duas vias (A4) com layout da marca, termos de retirada e impressão em tons de cinza
 - Command Bar global (`Ctrl+K`) para busca unificada
 - Notificação ao cliente via WhatsApp (deep linking) quando o serviço está pronto
 - Edição de itens, quantidades e preços após a criação da OS
@@ -199,7 +199,7 @@ src/
         ├── ServiceOrdersPage.tsx      # Lista com busca, filtro e ordenação
         ├── ServiceOrderForm.tsx       # Formulário com autocomplete, quick-create e quantidade
         ├── ServiceOrderDetail.tsx     # Detalhe com fluxo de status, edição de itens e entrada
-        ├── PrintServiceOrder.tsx      # Impressão 2 vias A4
+        ├── PrintServiceOrder.tsx      # Impressão personalizada 2 vias A4
         ├── ServicesPage.tsx           # Catálogo de serviços (CRUD)
         ├── CustomersPage.tsx          # Clientes (CRUD)
         ├── WorkshopPage.tsx           # Visão oficina (kanban por status)
@@ -273,7 +273,7 @@ Cada transição é feita via botões na tela de detalhes da OS, ou pelo seletor
 
 ## Impressão
 
-A rota `/os/:id/print` renderiza duas vias da OS em uma folha A4 usando `window.print()` com regras CSS `@media print`. A tabela de itens inclui colunas de quantidade e subtotal. Sem dependências externas de geração de PDF — aproveita o motor Chromium do Electron.
+A rota `/os/:id/print` renderiza duas vias da OS em uma folha A4 usando `window.print()`. O layout é desenhado em unidades de impressão (cm, mm, pt) com a identidade visual do estabelecimento, e ampliado via `zoom` para visualização no app. A impressão é em tons de cinza. Sem dependências externas de geração de PDF — aproveita o motor Chromium do Electron.
 
 ## WhatsApp
 
