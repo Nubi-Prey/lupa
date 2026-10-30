@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "2.0",
+  "id": "lupa",
+  "repo": "lupa",
+  "casing": "Nubi-Prey/lupa",
+  "categoryKey": "desktop",
+  "badge": "OFFLINE RESILIENT",
+  "refLabel": "OFFLINE RESILIENT",
+  "title": "Lupa",
+  "description": "Gerenciador desktop de Ordens de Serviço para oficinas de joalheria. Arquitetura híbrida local-first com sincronização em nuvem via MongoDB Atlas, busca fuzzy rápida com Fuse.js (Ctrl+K) e impressão em duas vias A4.",
+  "icon": "https://raw.githubusercontent.com/Nubi-Prey/lupa/master/docs/img/icon.jpeg",
+  "visitLink": "https://github.com/Nubi-Prey/lupa",
+  "tags": [
+    "Electron 39",
+    "React 19",
+    "TypeScript 5.9",
+    "Tailwind v4",
+    "Zustand 5",
+    "MongoDB Atlas"
+  ],
+  "links": {
+    "github": "https://github.com/Nubi-Prey/lupa",
+    "releases": "https://github.com/Nubi-Prey/lupa/releases",
+    "visit": null
+  },
+  "locales": {
+    "pt_BR": {
+      "title": "Lupa",
+      "tagline": "Gestão de Ordens de Serviço Local-First para Joalherias",
+      "category": "Desktop Local-First",
+      "badge": "OFFLINE RESILIENT",
+      "refLabel": "OFFLINE RESILIENT",
+      "description": "Gerenciador desktop de Ordens de Serviço para oficinas de joalheria. Arquitetura híbrida local-first com sincronização em nuvem via MongoDB Atlas, busca fuzzy rápida com Fuse.js (Ctrl+K) e impressão em duas vias A4.",
+      "tags": [
+        "Electron 39",
+        "React 19",
+        "TypeScript 5.9",
+        "Tailwind v4",
+        "Zustand 5",
+        "MongoDB Atlas"
+      ],
+      "highlights": [
+        "Arquitetura local-first com sincronização assíncrona no MongoDB Atlas",
+        "Barra de comandos (Ctrl+K) com busca fuzzy via Fuse.js em menos de 10ms",
+        "Impressão de ordens de serviço em folha A4 e envio de notificações via deep link no WhatsApp"
+      ]
+    },
+    "en_US": {
+      "title": "Lupa",
+      "tagline": "Local-First Service Order Management for Jewelry Workshops",
+      "category": "Desktop Local-First",
+      "badge": "OFFLINE RESILIENT",
+      "refLabel": "OFFLINE RESILIENT",
+      "description": "Desktop service order manager for jewelry workshops. Hybrid local-first architecture with MongoDB Atlas cloud sync, fuzzy search via Fuse.js (Ctrl+K), and dual-copy A4 printing.",
+      "tags": [
+        "Electron 39",
+        "React 19",
+        "TypeScript 5.9",
+        "Tailwind v4",
+        "Zustand 5",
+        "MongoDB Atlas"
+      ],
+      "highlights": [
+        "Hybrid local-first architecture with background sync to MongoDB Atlas",
+        "Command bar (Ctrl+K) with Fuse.js fuzzy search responding in under 10ms",
+        "Dual-copy A4 service order printing and direct WhatsApp deep link notifications"
+      ]
+    }
+  }
+}
